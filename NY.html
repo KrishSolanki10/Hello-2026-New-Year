@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome 2026</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        animation: slideDown 1.5s ease;
+    }
+
+    p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        animation: fadeIn 3s ease;
+    }
+
+    .highlight {
+        color: #00ffd5;
+        font-weight: bold;
+    }
+
+    .glow {
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 5px #00ffd5;
+        }
+        to {
+            text-shadow: 0 0 20px #00ffd5;
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="glow">Welcome 2026</h1>
+    <p>Building skills. Writing code. Creating the future.</p>
+    <p class="highlight">— Krish Solanki</p>
+</div>
+
+<footer>
+    © 2026 | Crafted with passion & code
+</footer>
+
+</body>
+</html>
